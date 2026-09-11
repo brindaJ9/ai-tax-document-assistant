@@ -5,6 +5,10 @@ retrieved_chunks = [
     {
         "page": 159,
         "text": "Income of every kind which is not to be excluded from the total income under this Act, shall be chargeable to income-tax under the head 'Income from other sources'."
+    },
+    {
+        "page": 160,
+        "text": "Any dividend shall be chargeable to income-tax under the head 'Income from other sources'."
     }
 ]
 

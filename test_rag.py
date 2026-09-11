@@ -1,5 +1,5 @@
 from src.rag import build_rag_pipeline, answer_question
-
+from src.citations import get_cited_sources
 
 pdf_path = "data/income_tax_act_2025.pdf"
 
@@ -11,7 +11,9 @@ print(f"Created {len(chunks)} chunks.")
 
 
 # Ask a question
-question = "Who is the current Prime Minister of India?"# Run the RAG pipeline
+question = "According to Section 92, what is included under income from other sources?"
+
+#Run the RAG pipeline
 answer, retrieved_chunks = answer_question(
     question,
     model,
@@ -26,9 +28,16 @@ print("\nAnswer:\n")
 print(answer)
 
 
-# Display the sources retrieved
+# Format the retrieved sources
+sources = get_cited_sources(
+    answer,
+    retrieved_chunks
+)
+
 print("\nSources:\n")
 
-for chunk in retrieved_chunks:
-    print(f"Page {chunk['page']}")
-    print("-" * 40)
+for source in sources:
+    print(
+        f"• Source {source['source_number']} — "
+        f"Income-tax Act, 2025 — Page {source['page']}"
+    )
