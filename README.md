@@ -86,18 +86,18 @@ I could not find this information in the provided tax documents.
 This helps prevent the model from answering questions using unsupported general knowledge.
 
 ## Running Locally
-# 1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/brindaJ9/ai-tax-document-assistant.git
 cd ai-tax-document-assistant
-# 2. Create and activate a virtual environment
+### 2. Create and activate a virtual environment
 python -m venv .venv
 
 Windows PowerShell:
 
 .venv\Scripts\Activate.ps1
-# 3. Install dependencies
+### 3. Install dependencies
 pip install -r requirements.txt
-# 4. Add your Gemini API key
+### 4. Add your Gemini API key
 
 Create a .env file in the project root:
 
@@ -105,12 +105,13 @@ GEMINI_API_KEY=your_api_key_here
 
 Never commit the .env file to GitHub.
 
-# 5. Run the application
+### 5. Run the application
 streamlit run app.py
 
 The application will open in your browser.
 
-## Project Structure
+# Project Structure
+
 ai-tax-document-assistant/
 │
 ├── app.py
