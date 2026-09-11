@@ -2,3 +2,6 @@ streamlit
 PyMuPDF
 sentence-transformers
 faiss-cpu
+openai
+python-dotenv
+google-genai
