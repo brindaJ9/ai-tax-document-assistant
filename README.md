@@ -30,6 +30,7 @@ Gemini LLM
 Grounded Answer + Source Citations
         ↓
 Streamlit UI
+```
 
 ## Tech Stack
 
